@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
 
-const Contact = () => {
+const Contacts = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -229,4 +229,4 @@ const Loader = () => {
 
 
 
-export default Contact ;
+export default Contacts ;

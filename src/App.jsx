@@ -10,7 +10,7 @@ import Experience from './component/Experience'
 import Language from './component/Language'
 import Projects from './component/Projects' 
 import Testimonials from './component/Testimonials'
-import Contact from './component/contact'
+import Contacts from './component/Contacts'
 function App() {
   // const [count, setCount] = useState(0)
   return (
@@ -24,7 +24,7 @@ function App() {
       <Language />
       <Projects /> 
       <Testimonials />
-      <Contact />
+      <Contacts />
     </div>
  
     </>
