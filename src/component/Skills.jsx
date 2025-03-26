@@ -1,11 +1,16 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import pic13 from '../assets/pic13.webp';
+import pic15 from '../assets/pic15.webp';
+import pic16 from '../assets/pic16.webp';
+import pic17 from '../assets/pic17.webp';
+
 const skills = [
-    { name: 'Web Developer', logo: 'src/assets/pic13.webp' },
-    { name: 'Graphics Designer', logo: 'src/assets/pic15.webp' },
-    { name: 'Brand Designer', logo: 'src/assets/pic16.webp' },
-    { name: 'Content Creator', logo: 'src/assets/pic17.webp' },
+    { name: 'Web Developer', logo: pic13 },
+    { name: 'Graphics Designer', logo: pic15 },
+    { name: 'Brand Designer', logo: pic16 },
+    { name: 'Content Creator', logo: pic17 },
 ];
 
 const Skills = () => {

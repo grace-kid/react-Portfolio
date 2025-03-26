@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
 // Orbit Component
+
 const Orbit = ({ radius, duration, image, size }) => {
        useEffect(() => {
            // Initialize AOS
@@ -51,28 +52,27 @@ const Language = () => {
       <div className="relative hidden md:block pt-30 w-full h-[500px]" data-aos="zoom-out-up" data-aos-offset="200">
         {/* Sun */}
         <img
-          src="src/assets/js.png"
-          alt="Sun"
+          src={js}      alt="Sun"
           className="absolute  sun  left-1/5 top-1/2 mt-20  rounded-full  "
         />
 
         {/* Mercury */}
-        <Orbit radius={300} duration="24s" image="src/assets/html.png " size={46} />
+        <Orbit radius={300} duration="24s" image={html}   size={46} />
         {/* Venus */}
-        <Orbit radius={300} duration="16s" image="src/assets/css.jpg" size={49} />
+        <Orbit radius={300} duration="16s" image={css}  size={49} />
         {/* Earth */}
-        <Orbit radius={300} duration="18s" image="src/assets/linux.jpg" size={46} />
+        <Orbit radius={300} duration="18s" image={linux}  size={46} />
         {/* Mars */}
-        <Orbit radius={300} duration="20s" image="src/assets/mysql.png" size={49} />
+        <Orbit radius={300} duration="20s" image={mysql}  size={49} />
         {/* Jupiter */}
-        <Orbit radius={300} duration="22s" image="src/assets/git.png" size={45} />
+        <Orbit radius={300} duration="22s" image={git}  size={45} />
         {/* Saturn */}
-        <Orbit radius={300} duration="14s" image="src/assets/vsCode.jpg" size={48} /> 
+        <Orbit radius={300} duration="14s" image={vsCode}  size={48} /> 
         {/* Uranus */}
-        <Orbit radius={300} duration="17s" image="src/assets/node.png" size={48} />
+        <Orbit radius={300} duration="17s" image={node}  size={48} />
         {/* Neptune */}
-        <Orbit radius={300} duration="26s" image="src/assets/react.svg" size={49} />
-        <Orbit radius={300} duration="28s" image="src/assets/tailwind.png" size={48} />
+        <Orbit radius={300} duration="26s" image={react}  size={49} />
+        <Orbit radius={300} duration="28s" image={tailwind}  size={48} />
       </div>
       <div className="  md:mr-20 md:mt-10" data-aos="flip-left" data-aos-offset="200">
         {/* <h1 className="text-3xl font-extrabold text-center text-amber-50">Tech Skills</h1> */}
@@ -83,6 +83,16 @@ const Language = () => {
 };
 
 import styled from 'styled-components';
+import js from '../assets/js.png';
+import html from '../assets/html.png';
+import css from '../assets/css.jpg';
+import linux from '../assets/linux.jpg';
+import mysql from '../assets/mysql.png';
+import git from '../assets/git.png';
+import vsCode from '../assets/vsCode.jpg';
+import node from '../assets/node.png';
+import react from '../assets/react.svg';
+import tailwind from '../assets/tailwind.png';
 
 const Card = () => {
   return (

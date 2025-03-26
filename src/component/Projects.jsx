@@ -3,21 +3,28 @@ import styled from 'styled-components';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
+import pic01 from '../assets/pic01.jpg';
+import pic02 from '../assets/pic02.jpg';
+import pic03 from '../assets/pic03.jpg';
+import pic04 from '../assets/pic04.jpg';
+import pic05 from '../assets/pic05.jpg';
+import pic06 from '../assets/pic06.jpg';
+
 const projects = [
     {
-        title: 'Affiliate marketing program',
+        title: 'Affiliate  program',
         description: 'the project is a simple affiliate marketing program that allows users to earn money by referring people to the platform. ',
         link: 'https://github.com/grace-kid/shiba-earn',
         gitlink: 'https://github.com/grace-kid/shiba-earn',
-        image: 'src/assets/pic05.jpg',
-        skills: '#ejs #node.js #postgreSql  #tailwindcss', 
+        image: pic05,
+        skills: '#css #node.js #postgreSql  ', 
     },
     {
         title: 'E-commerce Computer Store',
         description: 'this project is an e-commerce computer store that allows users to buy computer parts and accessories.',
         link: 'https://grace-kid.github.io/D.W.T-computer-store/',
         gitlink: 'https://github.com/grace-kid/D.W.T-computer-store',
-        image: 'src/assets/pic01.jpg',
+        image: pic01,
         skills: '#javaScript #css  #html',
     },
     {
@@ -25,7 +32,7 @@ const projects = [
         description: 'this project is a CGP calculator that allows students to calculate their CGP. ',
         link: 'https://grace-kid.github.io/ESUT-GP-Calculator/',
         gitlink: 'https://github.com/grace-kid/ESUT-GP-Calculator',
-        image: 'src/assets/pic02.jpg',
+        image: pic02,
         skills: '#html #css #angularJS ',
     },
     {
@@ -33,8 +40,8 @@ const projects = [
         description: 'this investment website allows users to invest in the stock market.',
         link: 'https://github.com/grace-kid/nova-wave',
         gitlink: 'https://github.com/grace-kid/nova-wave',
-        image: 'src/assets/pic04.jpg',
-        skills: '#ejs #node.js #postgreSql  #tailwindcss', 
+        image: pic04,
+        skills: '#css #node.js #postgreSql  ', 
 
     },
     {
@@ -42,15 +49,15 @@ const projects = [
         description: 'this project allows users to search for movies and get information about the movie.',
         link: 'https://github.com/grace-kid/movie-search',
         gitlink: 'https://github.com/grace-kid/movie-search',
-        image: 'src/assets/pic06.jpg',
-        skills: '#ejs #node.js #postgreSql  #tailwindcss', 
+        image: pic06,
+        skills: '#ejs #node.js  #tailwindcss', 
     },
     {
         title: 'cryptopluse ',
         description: 'this investment website allows users to invest in the stock market.',
         link:'https://grace-kid.github.io/investment-site/',
         gitlink: 'https://github.com/grace-kid/investment-site-',
-        image: 'src/assets/pic03.jpg',
+        image: pic03,
         skills: '#javaScript #css  #html',
     },
     // Add more projects as needed
@@ -72,19 +79,19 @@ const Projects = () => {
         <p className="md:text-8xl text-4xl font-extrabold "> Projects</p>
         <p className=' text-2xl mx-10'>The projects I&apos;ve undertaken serve as demonstrations of my skills and experience using real-world instances of my work. </p>
     </div>
-<div className="md:flex justify-center pt-10 flex-wrap-reverse min-h-screen ">
+<div className="flex flex-wrap justify-center pt-10 min-h-screen ">
             
             {projects.map((project, index) => (
 
                    <StyledWrapper key={index}  data-aos="flip-left" data-aos-offset="200">
-                   <div  className="container noselect border-2 border-red-500 rounded-3xl">
+                   <div  className="container md:w-[390px] noselect ">
                      <div className="canvas">
                        <div className="tracker tr-1" />
                        <div className="tracker tr-2" />
                        <div className="tracker tr-3" />
                        <div className="tracker tr-4" >
-                       <div className="absolute skills border-2 border-red-500  z-300 top-2 right-2 ">
-                           <a href={project.link} className='p-3 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
+                       <div className="absolute skills mx-2 border-2 border-red-500  z-300 top-2 right-2 ">
+                           <a href={project.link} className='p-2 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
                            <ion-icon size="large" name="link"></ion-icon> 
                            
                            {/* <span>View Project</span> */}
@@ -95,7 +102,7 @@ const Projects = () => {
                        <div className="tracker tr-5" >
                        <div className="absolute skills border-2 border-red-500  z-300 top-2 right-2 ">
                          
-                           <a href={project.gitlink} className=' p-3 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
+                           <a href={project.gitlink} className=' p-2 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
                            <ion-icon size="large" name="logo-github"></ion-icon>                            
                            {/* <span>View Project</span> */}
                            </a>
@@ -121,8 +128,8 @@ const Projects = () => {
                        <div className="tracker tr-23" />
                        <div className="tracker tr-24" />
                        <div className="tracker tr-25" />
-                       <div id="card" style={{ backgroundImage: `url(${project.image})` }} className='bg-cover bg-top  bg-no-repeat'>
-                         <p className='skills px-2 my-1 rounded-xl border-2 border-red-500 ' id="prompt">{project.title}</p>
+                       <div id="card" style={{ backgroundImage: `url(${project.image})` }} className='bg-cover rounded-xl border-2 border-red-500  bg-top  bg-no-repeat'>
+                         <p className='skills px-2 my-1 mx-2 rounded-xl border-2 border-red-500 ' id="prompt">{project.title}</p>
                          <div className="title skills p-5">{project.description}</div>
                          {/* <div className="absolute skills z-300 top-2 right-2 ">
                            <a href={project.link} className='p-3 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
@@ -134,7 +141,7 @@ const Projects = () => {
                            </a>
 
                          </div> */}
-                         <div className='absolute bottom-0 border-2 border-red-500   left-3 p-2 skills shadow-2xl text-amber-50'>
+                         <div className='absolute bottom-0 border-2 border-red-500 px-3  left-3 m-2  skills shadow-2xl text-amber-50'>
                            <h1>
                                {project.skills}
                            </h1>
@@ -157,7 +164,7 @@ const StyledWrapper = styled.div`
   /*works janky on mobile :<*/
   .container {
     position: relative;
-    width: 390px;
+    width: 290px;
     height: 454px;
     transition: 200ms;
     margin: 10px;
@@ -188,7 +195,6 @@ const StyledWrapper = styled.div`
     transition-timing-function: ease-in-out-out;
     transition-delay: 100ms;
     position: absolute;
-    font-size: x-large;
     font-weight: bold;
     color: white;
     margin: 10px;
@@ -202,7 +208,6 @@ const StyledWrapper = styled.div`
     bottom: 38px;
     left: 12px;
     z-index: 20;
-    font-size: 30px;
     font-weight: bold;
     transition: 300ms ease-in-out-out;
     position: absolute;
