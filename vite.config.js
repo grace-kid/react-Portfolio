@@ -5,6 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react() , tailwindcss()],
+  assetsInclude: ['**/*.docx'],
   theme: {
     extend: {
       animation: {
@@ -21,3 +22,5 @@ export default defineConfig({
   
 })
 /** @type {import('tailwindcss').Config} */
+// vite.config.js
+
