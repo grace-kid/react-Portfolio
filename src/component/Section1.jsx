@@ -65,10 +65,10 @@ const Section1 = () => {
                                     </p>
                                 </div>
                                <a href="src/assets/CV.docx">
-                               <button className="border-2 px-2 mt-7 cvd text-2xl mr-1 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-red-950" data-aos="zoom-in" >View CV<span><ion-icon  name="eye"></ion-icon></span></button>
+                               <button className="border-2 px-2 mt-7 cvd text-2xl mr-1  -skew-x-16 rounded-xl  font-extrabold hover:bg-red-950" data-aos="zoom-in" >View CV<span><ion-icon  name="eye"></ion-icon></span></button>
                                </a>
                                <a href="src/assets/CV.docx" download={true}>
-                               <button className="border-red-600 cvd text-2xl  border-2 px-3 -skew-x-16 rounded-xl                                 hover:bg-red-950" data-aos="zoom-in" >Download CV<span><ion-icon  name="download"></ion-icon></span></button>
+                               <button className="border-red-600 cvd text-2xl m-3 border-2 px-3 -skew-x-16 rounded-xl hover:bg-red-950" data-aos="zoom-in" >Download CV<span><ion-icon  name="download"></ion-icon></span></button>
                                </a>
                             </div>
                             {/* <div className=" top-80 w-full p-5 border-r-2 border-t-2 h-40 rounded-tr-sm rounded-bl-sm"></div> */}
