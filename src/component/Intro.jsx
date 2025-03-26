@@ -2,6 +2,7 @@
 
 import { FaWhatsapp, FaGithub, FaTiktok, FaFacebook,} from 'react-icons/fa';
 import pic11 from '../assets/pic11.jpg';
+import CV from '../assets/CV.docx';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -39,10 +40,10 @@ const Intro = () => {
               
             </div>
 <div className="md:flex  space-y-4 space-x-4 md:space-x-0 md:space-y-0 justify-center">
-<a href="src/assets/CV.docx">
+<a href={CV}>
 <button className="border-2 cv cvd border-red-600 px-2 ml-2  text-2xl mr-1 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-red-950">View CV <span><ion-icon  name="eye"></ion-icon></span></button>
 </a>
-<a href="src/assets/CV.docx" download={true}>
+<a href={CV} download={true}>
 <button className="border-red-600 cv cvd   rounded-sm border-2 px-2 ml-2 -skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-red-950">Download CV<span><ion-icon  name="download"></ion-icon></span></button>
 </a>
 </div>

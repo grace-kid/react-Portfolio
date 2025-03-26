@@ -1,6 +1,8 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import CV from '../assets/CV.docx';
+
 const Section1 = () => {
          useEffect(() => {
              // Initialize AOS
@@ -30,10 +32,10 @@ const Section1 = () => {
                 <div className="text-xl text-red-300 mt-8" data-aos="flip-left">
                     <p className="text-4xl">Hi, I am Samson, a passionate web developer with expertise in creating dynamic and responsive websites.</p>
                 </div>
-                <a href="src/assets/CV.docx">
+                <a href={CV}>
                 <button className="border-2 cvd px-2 mt-4 h1 mr-1 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-red-950" data-aos="fade-left">View CV <span><ion-icon  name="eye"></ion-icon></span></button>
                 </a>
-                <a href="src/assets/CV.docx" download={true}>
+                <a href={CV} download={true}>
                 <button className="border-red-600 cvd h1 rounded-sm border-2 px-3 -skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-red-950" data-aos="fade-right">Download CV <span><ion-icon  name="download"></ion-icon></span></button>
                 </a>
                 
@@ -64,10 +66,10 @@ const Section1 = () => {
 
                                     </p>
                                 </div>
-                               <a href="src/assets/CV.docx">
+                               <a href={CV}>
                                <button className="border-2 px-2 mt-7 cvd text-2xl mr-1  -skew-x-16 rounded-xl  font-extrabold hover:bg-red-950" data-aos="zoom-in" >View CV<span><ion-icon  name="eye"></ion-icon></span></button>
                                </a>
-                               <a href="src/assets/CV.docx" download={true}>
+                               <a href={CV} download={true}>
                                <button className="border-red-600 cvd text-2xl my-3 border-2 px-3 -skew-x-16 rounded-xl hover:bg-red-950" data-aos="zoom-in" >Download CV<span><ion-icon  name="download"></ion-icon></span></button>
                                </a>
                             </div>
