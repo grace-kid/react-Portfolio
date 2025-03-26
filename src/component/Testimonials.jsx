@@ -41,11 +41,11 @@ const testimonialsData = [
       }, []);
     return (
 <div className='bg-[url(/src/assets/pic9.avif)] bg-cover mt-10 md:min-h-screen bg-center bg-no-repeat '>
-    <div  className='p-10 space-y-5 blend1  ' data-aos="zoom-out-right" data-aos-offset="200">
+    <div  className='p-10 space-y-5 blend1  ' data-aos="zoom-in" data-aos-offset="200">
         <p className=' text-xl md:text-2xl font-bold'>what others say</p>
         <h1 className=" text-3xl md:text-8xl font-extrabold underline underline-offset-6">Testimonials</h1>
     </div>
-<div className=" flex md:flex-rol flex-wrap justify-center space-y-8    bg-cover  blend1 text-white">
+<div className=" flex flex-wrap justify-center space-y-8    bg-cover  blend1 text-white">
         {testimonialsData.map(({ name, title, testimonial }, index) => (
     <div href="#" key={index} className="group relative m block m-2 my-10  md:h-64 "data-aos-offset="200" data-aos="fade-up" >
  <div className="book  p-10 "  >
