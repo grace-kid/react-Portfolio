@@ -45,13 +45,13 @@ const testimonialsData = [
         <p className=' text-xl md:text-2xl font-bold'>what others say</p>
         <h1 className=" text-3xl md:text-8xl font-extrabold underline underline-offset-6">Testimonials</h1>
     </div>
-<div className=" flex flex-wrap justify-center space-y-8    bg-cover  blend1 text-white">
+<div className=" flex md:flex-rol flex-wrap justify-center space-y-8    bg-cover  blend1 text-white">
         {testimonialsData.map(({ name, title, testimonial }, index) => (
-    <div href="#" key={index} className="group relative m block m-2 my-10  md:h-64 "data-aos-offset="200" data-aos="fade-up" >
+    <div href="#" key={index} className="group relative  block m-2 my-10  md:h-64 "data-aos-offset="200" data-aos="fade-up" >
  <div className="book  p-10 "  >
  <p className="testimonial-text pp">{testimonial}</p>
-    <div className="cover testimonial flex-col text-center">
-    <h3 className="testimonial-nam text-3xl mb-10 underline underline-offset-2">@{name}</h3>
+    <div className="cover testimonial flex flex-col text-center">
+    <h3 className="testimonial-nam  text-3xl mb-10 underline underline-offset-2">@{name}</h3> 
     <h4 className="testimonial-title text-2xl ">{title}</h4>
     </div>
    </div>

@@ -403,6 +403,7 @@ header {
   backdrop-filter: blur(10px);
 
 }
+
 .blend {
   
   background-color: rgba(14, 1, 1, 0.2);
@@ -679,7 +680,7 @@ header {
 .book {
   position: relative;
   border-radius: 10px;
-  width: 320px;
+  width: 290px;
   height: 400px;
   background-color: whitesmoke;
   -webkit-box-shadow: 1px 1px 12px #000;
