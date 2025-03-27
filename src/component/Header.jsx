@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { FaWhatsapp, FaGithub, FaTiktok, FaFacebook ,  FaBars,  FaBan, FaLink } from 'react-icons/fa';
+
 import '../App.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -28,19 +30,19 @@ const Header = () => {
                 </div>
                 <div className='link border-2 text-red-500 border-b-0 rounded-t-xl flex flex-auto space-x-6 px-3 pt-1 mx-2  text-center justify-center'> 
                     <div className='link  flex space-x-2 w-8 overflow-x-hidden   '>
-                    <p className=' '><ion-icon size="large" name="logo-whatsapp"></ion-icon></p>
+                    <p className=' '><FaWhatsapp size={30} /></p>
                     <p className='hover:underline underline-offset-4 hover:font-extrabold'> <a   target="_blank" href="http://wa.me/2347082865002">whatsapp</a></p>
                     </div>
                     <div className='flex space-x-2 w-8 overflow-x-hidden link '>
-                    <p><ion-icon size="large" name="logo-facebook"></ion-icon></p>
+                    <p><FaFacebook size={30} /></p>
                     <p className='hover:underline underline-offset-4 hover:font-extrabold'><a  target="_blank" href="https://www.facebook.com/profile.php?id=100089490734680">facebook</a></p>
                     </div>
                     <div className='flex space-x-2 w-8 overflow-x-hidden link '>
-                        <p><ion-icon size="large" name="logo-tiktok"></ion-icon></p>
+                        <p><FaTiktok size={30} /></p>
                     <p className='hover:underline underline-offset-4 hover:font-extrabold'><a  target="_blank" href="https://www.tiktok.com/@grace.kid59?_t=ZM-8uuGNR2eBN7&_r=1">tik tok</a></p>
                     </div>
                     <div className='flex space-x-2 w-8 overflow-x-hidden link '>
-                        <p><ion-icon size="large" name="logo-github"></ion-icon></p>
+                        <p><FaGithub size={30} /></p>
                     <p className='hover:underline underline-offset-4 hover:font-extrabold'><a  target="_blank" href="http://github.com/grace-kid">github</a></p>
                     </div>
                 </div>
@@ -51,10 +53,10 @@ const Header = () => {
                </div>
             </nav>
             <div className='flex md:hidden justify-between z-200'>
-                <div className='border-b-2 px-2    border-red-600 py-2' onClick={toggleContact}><ion-icon size="large" name={contact ?"person-circle-outline" : "person-circle-sharp" }></ion-icon></div>
+                <div className='border-b-2 px-2    border-red-600 py-2' onClick={toggleContact}>{contact ? <FaLink  size={30} /> : <FaBan size={30} />}</div>
                 <div className='link border-2 text-red-500 border-b-0 rounded-t-xl flex flex-auto  p-2  text-center justify-center'> <h1 className=' font-bold  text-3xl'> Samson</h1></div>
                 <div className='border-b-2 px-2  border-red-600 py-2'>   <button onClick={toggleNav}>
-                        <ion-icon size="large" name={nav ? "menu-outline" : "close-outline"}></ion-icon>
+                 {nav ? <FaBars  size={30} /> : <FaBan  size={30} />}
                     </button></div>
             </div>
             <nav className='justify-end flex md:hidden z-100 fixed top-17  right-1'>

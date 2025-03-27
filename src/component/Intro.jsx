@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaGithub, FaTiktok, FaFacebook } from 'react-icons/fa';
+import { FaWhatsapp, FaGithub, FaTiktok, FaFacebook, FaEye, FaDownload } from 'react-icons/fa';
 import pic11 from '../assets/pic11.jpg'; // Import image
 import CV from '../assets/CV.docx'; // Import .docx file
 
@@ -93,7 +93,7 @@ const Intro = () => {
             <button className="border-2 cv cvd border-red-600 px-2 ml-2 text-2xl mr-1 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-red-950">
               View CV{' '}
               <span>
-                <ion-icon name="eye"></ion-icon>
+                <FaEye size={30} />
               </span>
             </button>
           </a>
@@ -103,7 +103,7 @@ const Intro = () => {
             <button className="border-red-600 cv cvd rounded-sm border-2 px-2 ml-2 -skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-red-950">
               Download CV{' '}
               <span>
-                <ion-icon name="download"></ion-icon>
+              <FaDownload size={30} />
               </span>
             </button>
           </a>

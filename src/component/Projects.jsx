@@ -9,6 +9,7 @@ import pic03 from '../assets/pic03.jpg';
 import pic04 from '../assets/pic04.jpg';
 import pic05 from '../assets/pic05.jpg';
 import pic06 from '../assets/pic06.jpg';
+import {  FaGithub,  FaLink } from 'react-icons/fa';
 
 const projects = [
     {
@@ -90,21 +91,19 @@ const Projects = () => {
                        <div className="tracker tr-2" />
                        <div className="tracker tr-3" />
                        <div className="tracker tr-4" >
-                       <div className="absolute skills mx-2 border-2 border-red-500  z-300 top-2 right-2 ">
-                           <a href={project.link} className='p-2 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
-                           <ion-icon size="large" name="link"></ion-icon> 
-                           
+                       <div className="absolute  mx-1   z-300 top-2 right-2 ">
+                           <a href={project.link} className='  items-baseline  text-white' target="_blank"  rel="noopener noreferrer">
+                           <FaLink  className=' w-10  h-10 skills rounded-full border-2 border-red-500 '  size={30} />                           
                            {/* <span>View Project</span> */}
                            </a>
                            
 
                          </div></div>
                        <div className="tracker tr-5" >
-                       <div className="absolute skills border-2 border-red-500  z-300 top-2 right-2 ">
+                       <div className="absolute   z-300 top-2 right-2 ">
                          
-                           <a href={project.gitlink} className=' p-2 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
-                           <ion-icon size="large" name="logo-github"></ion-icon>                            
-                           {/* <span>View Project</span> */}
+                           <a href={project.gitlink} className='   items-baseline  text-white' target="_blank"  rel="noopener noreferrer">
+                           <FaGithub className=' w-10  h-10 skills rounded-full border-2 border-red-500 '  size={30} />                             {/* <span>View Project</span> */}
                            </a>
 
                          </div></div>
@@ -141,7 +140,7 @@ const Projects = () => {
                            </a>
 
                          </div> */}
-                         <div className='absolute bottom-0 border-2 border-red-500 px-3  left-3 m-2  skills shadow-2xl text-amber-50'>
+                         <div className='absolute bottom-0 border-2 border-red-500 px-3  left-3 m-1  skills shadow-2xl text-amber-50'>
                            <h1>
                                {project.skills}
                            </h1>
