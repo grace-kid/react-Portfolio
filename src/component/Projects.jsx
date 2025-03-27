@@ -140,7 +140,7 @@ const Projects = () => {
                            </a>
 
                          </div> */}
-                         <div className='absolute bottom-0 border-2 border-red-500 px-3  left-3 m-1  skills shadow-2xl text-amber-50'>
+                         <div className='absolute bottom-0 border-2 border-red-500 px-2  left-3 m-1  skills shadow-2xl text-amber-50'>
                            <h1>
                                {project.skills}
                            </h1>
@@ -163,7 +163,7 @@ const StyledWrapper = styled.div`
   /*works janky on mobile :<*/
   .container {
     position: relative;
-    width: 290px;
+    width: 300px;
     height: 454px;
     transition: 200ms;
     margin: 10px;
