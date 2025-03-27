@@ -5,19 +5,19 @@ import 'aos/dist/aos.css';
 import  { useEffect } from 'react';
 const testimonialsData = [
     {
-        name: 'John Doe',
+        name: 'Eng John Ozo',
         title: 'CEO of Company',
         testimonial: 'This is an amazing service! Highly recommend to everyone.',
         image: 'path/to/image1.jpg'
     },
     {
-        name: 'Jane Smith',
+        name: 'Prof Smith Sunday',
         title: 'Marketing Director',
         testimonial: 'After samson optimized our website, our traffic increased by 50%. We can\'t thank him enough!',
         image: 'path/to/image2.jpg'
     },
     {
-        name: 'Sam Wilson',
+        name: 'Samuel Wilson',
         title: 'Product Manager',
         testimonial: 'I\'ve never met a web developer who truly cares about their clients\' success like Samson does.',
         image: 'path/to/image3.jpg'
