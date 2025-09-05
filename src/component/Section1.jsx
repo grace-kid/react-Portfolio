@@ -16,9 +16,9 @@ const Section1 = () => {
     return (
        <div >
                 <section className="hidden md:block m-0 border-x-2 border-b-2 p-5  chakra-petch-light ">
-            <div className="landing-page h-160 p-5 rounded-3xl border-2 border-red-600" data-aos="fade-up" >
+            <div className="landing-page h-160 p-5 rounded-3xl border-2 border-[rgb(65, 5, 177)]" data-aos="fade-up" >
                 <header className="header ">
-                    <h1 className="text-3xl underline underline-offset-6">Welcome to My Portfolio</h1>
+                    <h1 className="text-3xl underline text-purple-300 underline-offset-6">Welcome to My Portfolio</h1>
                     <h1 className="text-7xl w-[50%]">
                         Your one-stop solution for Software development</h1>
                 </header>
@@ -30,7 +30,7 @@ const Section1 = () => {
 
             </div>
             <div className="absolute top-105 w-[49%] p-5 right-30 rounded-tl-3xl rounded-tr-sm rounded-br-3xl rounded-bl-sm hover:font-extrabold">
-                <div className="text-xl text-red-300 mt-8" data-aos="flip-left">
+                <div className="text-xl text-red-100 mt-8" data-aos="flip-left">
                     <p className="text-4xl">Hi, I am Samson, a passionate web developer with expertise in creating dynamic and responsive websites.</p>
                 </div>
                 <a href={CV}>
@@ -38,7 +38,7 @@ const Section1 = () => {
     </span></button>
                 </a>
                 <a href={CV} download="CV.docx">
-                <button className="border-red-600 cvd h1 rounded-sm border-2 px-3 -skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-red-950" data-aos="fade-right">Download CV{' '} <span><FaDownload size={30} /></span></button>
+                <button className="border-[rgb(65, 5, 177)] cvd h1 rounded-sm border-2 px-3 -skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-red-950" data-aos="fade-right">Download CV{' '} <span><FaDownload size={30} /></span></button>
                 </a>
                 
                 
@@ -53,7 +53,7 @@ const Section1 = () => {
         <section className='m-0 md:hidden '>
                     <div className='m-0 z-0'>
                         <section className="section1 m-0 border-x-2 border-b-2 p-5 chakra-petch-light">
-                            <div className=" h-auto  rounded-3xl border-2  border-red-600 bot1">
+                            <div className=" h-auto  rounded-3xl border-2  border-[rgb(65, 5, 177)] bot1">
                                 <header className="header z p-5 rounded-3xl" >
                                     <h1 className="text-2xl underline underline-offset-6">Welcome to My Portfolio</h1>
                                     <h1 className="text-5xl  pt-4">Your one-stop solution for Software development</h1>
@@ -62,17 +62,17 @@ const Section1 = () => {
                                 </section>
                             </div>
 
-                            <div className=" top-60  p-5 right-0 rounded-tl-3xl rounded-tr-sm rounded-br-3xl rounded-bl-sm hover:font-extrabold" data-aos="fade-left">
+                            <div className=" text-white top-60  p-5 right-0 rounded-tl-3xl rounded-tr-sm rounded-br-3xl rounded-bl-sm hover:font-extrabold" data-aos="fade-left">
                                 <div className="text-xl text-red-300 mt-5" data-aos="zoom-in">
                                     <p className="text-2xl">Hi, I am Samson, a passionate web developer with expertise in creating dynamic and responsive websites.
 
                                     </p>
                                 </div>
                                <a href={CV}>
-                               <button className="border-2 px-2 mt-7 cvd text-2xl mr-1  -skew-x-16 rounded-xl  font-extrabold hover:bg-red-950" data-aos="zoom-in" >View CV{' '}<span><ion-icon  name="eye"></ion-icon></span></button>
+                               <button className="border-2 px-2  mt-7 cvd text-2xl mr-1  -skew-x-16 rounded-xl  font-extrabold hover:bg-red-950" data-aos="zoom-in" >View CV{' '}<span><ion-icon  name="eye"></ion-icon></span></button>
                                </a>
                                <a href={CV} download="CV.docx">
-                               <button className="border-red-600 cvd text-2xl my-3 border-2 px-3 -skew-x-16 rounded-xl hover:bg-red-950" data-aos="zoom-in" >Download CV{' '}<span><ion-icon  name="download"></ion-icon></span></button>
+                               <button className="border-[rgb(65, 5, 177)] cvd  text-2xl my-3 border-2 px-3 -skew-x-16 rounded-xl hover:bg-red-950" data-aos="zoom-in" >Download CV{' '}<span><ion-icon  name="download"></ion-icon></span></button>
                                </a>
                             </div>
                             {/* <div className=" top-80 w-full p-5 border-r-2 border-t-2 h-40 rounded-tr-sm rounded-bl-sm"></div> */}

@@ -23,7 +23,7 @@ const Skills = () => {
                  });
                }, []);
     return (
-        <div className="flex skills-body z-10  flex-wrap justify-center gap-6 p-6">
+        <div className="flex skills-body z-10 text-white flex-wrap justify-center gap-6 p-6">
             {skills.map((skill, index) => (
                 <div
                     key={index}

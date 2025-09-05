@@ -75,7 +75,7 @@ const Projects = () => {
            }, []);
     return (
 <div id='work' className=' sky '>
-    <div className='text-center md:text-start md:px-20 blend px-5 py-5 pt-10 space-y-5 ' data-aos="zoom-in" data-aos-offset="200"> 
+    <div className='text-center text-purple-200 md:text-start md:px-20 blend px-5 py-5 pt-10 space-y-5 ' data-aos="zoom-in" data-aos-offset="200"> 
         <h1 className="md:text-3xl text-xl underline underline-offset-6"> My Work</h1>
         <p className="md:text-8xl text-4xl font-extrabold "> Projects</p>
         <p className=' text-2xl mx-10'>The projects I&apos;ve undertaken serve as demonstrations of my skills and experience using real-world instances of my work. </p>
@@ -93,7 +93,7 @@ const Projects = () => {
                        <div className="tracker tr-4" >
                        <div className="absolute  mx-1   z-300 top-2 right-2 ">
                            <a href={project.link} className='  items-baseline  text-white' target="_blank"  rel="noopener noreferrer">
-                           <FaLink  className=' w-10  h-10 skills rounded-full border-2 border-red-500 '  size={30} />                           
+                           <FaLink  className=' w-10  h-10 skills rounded-full border-2 border-purple-100 '  size={30} />                           
                            {/* <span>View Project</span> */}
                            </a>
                            
@@ -103,7 +103,7 @@ const Projects = () => {
                        <div className="absolute   z-300 top-2 right-2 ">
                          
                            <a href={project.gitlink} className='   items-baseline  text-white' target="_blank"  rel="noopener noreferrer">
-                           <FaGithub className=' w-10  h-10 skills rounded-full border-2 border-red-500 '  size={30} />                             {/* <span>View Project</span> */}
+                           <FaGithub className=' w-10  h-10 skills rounded-full border-2 border-red-100 '  size={30} />                             {/* <span>View Project</span> */}
                            </a>
 
                          </div></div>
@@ -127,8 +127,8 @@ const Projects = () => {
                        <div className="tracker tr-23" />
                        <div className="tracker tr-24" />
                        <div className="tracker tr-25" />
-                       <div id="card" style={{ backgroundImage: `url(${project.image})` }} className='bg-cover rounded-xl border-2 border-red-500  bg-top  bg-no-repeat'>
-                         <p className='skills px-2 my-1 mx-2 rounded-xl border-2 border-red-500 ' id="prompt">{project.title}</p>
+                       <div id="card" style={{ backgroundImage: `url(${project.image})` }} className='bg-cover rounded-xl border-2 border-red-100  bg-top  bg-no-repeat'>
+                         <p className='skills px-2 my-1 mx-2 rounded-xl border-2 border-red-100 ' id="prompt">{project.title}</p>
                          <div className="title skills p-5">{project.description}</div>
                          {/* <div className="absolute skills z-300 top-2 right-2 ">
                            <a href={project.link} className='p-3 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
@@ -140,7 +140,7 @@ const Projects = () => {
                            </a>
 
                          </div> */}
-                         <div className='absolute bottom-0 border-2 border-red-500 px-2  left-3 m-1  skills shadow-2xl text-amber-50'>
+                         <div className='absolute bottom-0 border-2 border-red-100 px-2  left-3 m-1  skills shadow-2xl text-amber-50'>
                            <h1>
                                {project.skills}
                            </h1>

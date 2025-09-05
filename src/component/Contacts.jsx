@@ -135,7 +135,7 @@ const Contacts = () => {
     </form>
   </div>
 </div>
-            <Loader />
+            {/* <Loader /> */}
         </div>
     );
 };

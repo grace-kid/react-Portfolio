@@ -40,7 +40,7 @@ const testimonialsData = [
         });
       }, []);
     return (
-<div className='bg-[url(/src/assets/pic9.avif)] bg-cover mt-10 md:min-h-screen bg-center bg-no-repeat '>
+<div className='bg-[url(/src/assets/bg4.jpg)] text-white bg-cover mt-10 md:min-h-screen bg-center bg-no-repeat '>
     <div  className='p-10 space-y-5 blend1  ' data-aos="zoom-in" data-aos-offset="200">
         <p className=' text-xl md:text-2xl font-bold'>what others say</p>
         <h1 className=" text-3xl md:text-8xl font-extrabold underline underline-offset-6">Testimonials</h1>
