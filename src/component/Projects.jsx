@@ -74,63 +74,98 @@ const Projects = () => {
              });
            }, []);
     return (
-<div id='work' className=' sky '>
-    <div className='text-center text-purple-200 md:text-start md:px-20 blend px-5 py-5 pt-10 space-y-5 ' data-aos="zoom-in" data-aos-offset="200"> 
-        <h1 className="md:text-3xl text-xl underline underline-offset-6"> My Work</h1>
-        <p className="md:text-8xl text-4xl font-extrabold "> Projects</p>
-        <p className=' text-2xl mx-10'>The projects I&apos;ve undertaken serve as demonstrations of my skills and experience using real-world instances of my work. </p>
-    </div>
-<div className="flex flex-wrap justify-center pt-10 min-h-screen ">
-            
-            {projects.map((project, index) => (
-
-                   <StyledWrapper key={index}  data-aos="flip-left" data-aos-offset="200">
-                   <div  className="container md:w-[390px] noselect ">
-                     <div className="canvas">
-                       <div className="tracker tr-1" />
-                       <div className="tracker tr-2" />
-                       <div className="tracker tr-3" />
-                       <div className="tracker tr-4" >
-                       <div className="absolute  mx-1   z-300 top-2 right-2 ">
-                           <a href={project.link} className='  items-baseline  text-white' target="_blank"  rel="noopener noreferrer">
-                           <FaLink  className=' w-10  h-10 skills rounded-full border-2 border-purple-100 '  size={30} />                           
-                           {/* <span>View Project</span> */}
-                           </a>
-                           
-
-                         </div></div>
-                       <div className="tracker tr-5" >
-                       <div className="absolute   z-300 top-2 right-2 ">
-                         
-                           <a href={project.gitlink} className='   items-baseline  text-white' target="_blank"  rel="noopener noreferrer">
-                           <FaGithub className=' w-10  h-10 skills rounded-full border-2 border-red-100 '  size={30} />                             {/* <span>View Project</span> */}
-                           </a>
-
-                         </div></div>
-                       <div className="tracker tr-6" />
-                       <div className="tracker tr-7" />
-                       <div className="tracker tr-8" />
-                       <div className="tracker tr-9" />
-                       <div className="tracker tr-10" />
-                       <div className="tracker tr-11" />
-                       <div className="tracker tr-12" />
-                       <div className="tracker tr-13" />
-                       <div className="tracker tr-14" />
-                       <div className="tracker tr-15" />
-                       <div className="tracker tr-16" />
-                       <div className="tracker tr-17" />
-                       <div className="tracker tr-18" />
-                       <div className="tracker tr-19" />
-                       <div className="tracker tr-20" />
-                       <div className="tracker tr-21" />
-                       <div className="tracker tr-22" />
-                       <div className="tracker tr-23" />
-                       <div className="tracker tr-24" />
-                       <div className="tracker tr-25" />
-                       <div id="card" style={{ backgroundImage: `url(${project.image})` }} className='bg-cover rounded-xl border-2 border-red-100  bg-top  bg-no-repeat'>
-                         <p className='skills px-2 my-1 mx-2 rounded-xl border-2 border-red-100 ' id="prompt">{project.title}</p>
-                         <div className="title skills p-5">{project.description}</div>
-                         {/* <div className="absolute skills z-300 top-2 right-2 ">
+      <div id='work' className=' sky '>
+        <div
+          className='md:text-center  text-purple-200 md:text-start md:px-20 blend px-5 py-5 pt-10 space-y-5 '
+          data-aos='zoom-in'
+          data-aos-offset='200'>
+          <h1 className='md:text-3xl text-center text-xl underline underline-offset-6'>
+            {" "}
+            My Work
+          </h1>
+          <p className='md:text-8xl text-center text-4xl font-extrabold '>
+            {" "}
+            Projects
+          </p>
+          <p className=' text-2xl mx-10'>
+            The projects I&apos;ve undertaken serve as demonstrations of my
+            skills and experience using real-world instances of my work.{" "}
+          </p>
+        </div>
+        <div className='flex flex-wrap justify-center pt-10 min-h-screen '>
+          {projects.map((project, index) => (
+            <StyledWrapper
+              key={index}
+              data-aos='flip-left'
+              data-aos-offset='200'>
+              <div className='container md:w-[390px] noselect '>
+                <div className='canvas'>
+                  <div className='tracker tr-1' />
+                  <div className='tracker tr-2' />
+                  <div className='tracker tr-3' />
+                  <div className='tracker tr-4'>
+                    <div className='absolute  mx-1   z-300 top-2 right-2 '>
+                      <a
+                        href={project.link}
+                        className='  items-baseline  text-white'
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <FaLink
+                          className=' w-10  h-10 skills rounded-full border-2 border-purple-100 '
+                          size={30}
+                        />
+                        {/* <span>View Project</span> */}
+                      </a>
+                    </div>
+                  </div>
+                  <div className='tracker tr-5'>
+                    <div className='absolute   z-300 top-2 right-2 '>
+                      <a
+                        href={project.gitlink}
+                        className='   items-baseline  text-white'
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        <FaGithub
+                          className=' w-10  h-10 skills rounded-full border-2 border-red-100 '
+                          size={30}
+                        />{" "}
+                        {/* <span>View Project</span> */}
+                      </a>
+                    </div>
+                  </div>
+                  <div className='tracker tr-6' />
+                  <div className='tracker tr-7' />
+                  <div className='tracker tr-8' />
+                  <div className='tracker tr-9' />
+                  <div className='tracker tr-10' />
+                  <div className='tracker tr-11' />
+                  <div className='tracker tr-12' />
+                  <div className='tracker tr-13' />
+                  <div className='tracker tr-14' />
+                  <div className='tracker tr-15' />
+                  <div className='tracker tr-16' />
+                  <div className='tracker tr-17' />
+                  <div className='tracker tr-18' />
+                  <div className='tracker tr-19' />
+                  <div className='tracker tr-20' />
+                  <div className='tracker tr-21' />
+                  <div className='tracker tr-22' />
+                  <div className='tracker tr-23' />
+                  <div className='tracker tr-24' />
+                  <div className='tracker tr-25' />
+                  <div
+                    id='card'
+                    style={{ backgroundImage: `url(${project.image})` }}
+                    className='bg-cover rounded-xl border-2 border-red-100  bg-top  bg-no-repeat'>
+                    <p
+                      className='skills px-2 my-1 mx-2 rounded-xl border-2 border-red-100 '
+                      id='prompt'>
+                      {project.title}
+                    </p>
+                    <div className='title skills p-5'>
+                      {project.description}
+                    </div>
+                    {/* <div className="absolute skills z-300 top-2 right-2 ">
                            <a href={project.link} className='p-3 m-2 items-baseline h-10 w-10 text-white' target="_blank"  rel="noopener noreferrer">
                            <ion-icon size="large" name="link"></ion-icon> 
                            
@@ -140,19 +175,16 @@ const Projects = () => {
                            </a>
 
                          </div> */}
-                         <div className='absolute bottom-0 border-2 border-red-100 px-2  left-3 m-1  skills shadow-2xl text-amber-50'>
-                           <h1>
-                               {project.skills}
-                           </h1>
-                         </div>
-
-                       </div>
-                     </div>
-                   </div>
-                 </StyledWrapper>
-           ))}
-       </div>
-</div>
+                    <div className='absolute bottom-0 border-2 border-red-100 px-2  left-3 m-1  skills shadow-2xl text-amber-50'>
+                      <h1>{project.skills}</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </StyledWrapper>
+          ))}
+        </div>
+      </div>
     );
 };
 

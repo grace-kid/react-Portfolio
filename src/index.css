@@ -110,9 +110,23 @@ header {
   
 }
 .bot1 {
-  background-image:url(assets/pic10.avif) ;
+  background-image:url(assets/bg6.webp);
+  background-size: cover;
   
 }
+.bot3 {
+  background-image:url(assets/bg5.webp);
+  background-size: cover;
+  
+}
+.bot2 {
+  background-image:url(assets/bg5.webp);
+  background-size: cover;
+  background-position-y: center;
+  background-position-x: center;
+
+}
+
 .myPic {
   background-image:url(assets/bg8.jpg);
   background-size:cover;
@@ -257,8 +271,8 @@ header {
  }
  .education{
   padding: 100px 15px;
-  font-family:  monospace;
-  background-color: rgba(0, 0, 0, 0.877);
+  font-family: 'Chakra Petch', sans-serif;
+  background-color: rgba(0, 0, 0, 0.658);
     
 }
 .education h2{

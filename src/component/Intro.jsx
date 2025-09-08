@@ -19,14 +19,14 @@ const Intro = () => {
   return (
     <div
       id='about'
-      className='intro flex flex-col items-center justify-center min-h-screen bg-black text-[#4105b1]'>
-      <div className='intro-box w-full m-0'>
+      className='intro flex flex-col items-start justify-start min-h-screen bg-black text-[#4105b1]'>
+      <div className='intro-box w-full m-0 md:text-center text-left'>
         {/* Title */}
         <h1
-          className='md:text-8xl  font-bold flex mb-8 underline text-white'
+          className='md:text-8xl text-left font-bold flex md:my-8 underline text-white'
           data-aos='fade-up'
           data-aos-offset='200'>
-          Ab{" "}
+          Ab
           <span>
             <img
               data-aos='fade-down'
@@ -41,7 +41,7 @@ const Intro = () => {
 
         {/* Description */}
         <p
-          className='text-center md:text-6xl mb-4 md:mx-0 mx-10'
+          className='md:text-center text-left  md:text-6xl mb-4 md:mx-0 mx-10'
           data-aos='fade-up'
           data-aos-offset='200'>
           Hello! My name is Samson. I am a passionate software developer with
@@ -56,28 +56,28 @@ const Intro = () => {
             href='http://wa.me/2347082865002'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-[#4105b1] hover:text-blue-800 transition duration-300 fff shadow-indigo-50'>
+            className='text-white hover:text-blue-800 transition duration-300 fff shadow-indigo-50'>
             <FaWhatsapp size={30} />
           </a>
           <a
             href='http://github.com/grace-kid'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-[#4105b1] hover:text-gray-600 transition fff duration-300'>
+            className='text-white hover:text-gray-600 transition fff duration-300'>
             <FaGithub size={30} />
           </a>
           <a
             href='https://www.tiktok.com/@grace.kid59?_t=ZM-8uuGNR2eBN7&_r=1'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-[#4105b1] hover:text-blue-600 transition fff duration-300'>
+            className='text-white hover:text-blue-600 transition fff duration-300'>
             <FaTiktok size={30} />
           </a>
           <a
             href='https://www.facebook.com/profile.php?id=100089490734680'
             target='_blank'
             rel='noopener noreferrer'
-            className='text-[#4105b1] hover:text-blue-600 transition fff duration-300'>
+            className='text-white hover:text-blue-600 transition fff duration-300'>
             <FaFacebook size={30} />
           </a>
         </div>

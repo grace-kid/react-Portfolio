@@ -28,7 +28,7 @@ const Header = () => {
         data-aos='fade-down'>
         <nav className=' justify-between md:flex hidden  '>
           <div className='border-b-2  border-[rgb(65, 5, 177)] py-3'>
-            <h1 className='border-[rgb(65, 5, 177)] border-2  h1 px-3 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-blue-800  hover:text-white '>
+            <h1 className='border-[rgb(65, 5, 177)] border-2  h1 px-3 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-purple-800  hover:text-white '>
               {" "}
               Samson
             </h1>
@@ -81,35 +81,37 @@ const Header = () => {
             </div>
           </div>
           <div className='flex space-x-2 py-3 border-b-2 font-bold  border-[rgb(65, 5, 177)] '>
-            <h3 className='border-[rgb(65, 5, 177)] border-2 rounded-sm px-3  h1  skew-x-16 hover:bg-blue-800  hover:text-white '>
+            <h3 className='border-[rgb(65, 5, 177)] border-2 rounded-sm px-3  h1  skew-x-16 hover:bg-purple-800  hover:text-white '>
               <a href='#about'>about</a>
             </h3>
-            <h3 className='border-[rgb(65, 5, 177)] rounded-sm  h1 border-2 px-3 skew-x-16 hover:bg-blue-800  hover:text-white '>
+            <h3 className='border-[rgb(65, 5, 177)] rounded-sm  h1 border-2 px-3 skew-x-16 hover:bg-purple-800  hover:text-white '>
               <a href='#contact'>contact</a>
             </h3>
-            <h3 className='border-[rgb(65, 5, 177)] rounded-sm border-2 h1 px-3 skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-blue-800  hover:text-white '>
+            <h3 className='border-[rgb(65, 5, 177)] rounded-sm border-2 h1 px-3 skew-x-16 rounded-tr-xl rounded-br-xl hover:bg-purple-800  hover:text-white '>
               <a href='#work'>work</a>
             </h3>
           </div>
         </nav>
-        <div className='flex md:hidden justify-between z-200'>
+        <div className='flex md:hidden bot3 justify-between z-200'>
           <div
             className='border-b-2 px-2    border-[rgb(65, 5, 177)] py-2'
             onClick={toggleContact}>
+                <button className='text-white' > 
             {contact ? <FaLink size={30} /> : <FaBan size={30} />}
+                </button>
           </div>
-          <div className='link border-2 text-[rgb(65, 5, 177)] border-b-0 rounded-t-xl flex flex-auto  p-2  text-center justify-center'>
+          <div className='link border-2 text-[rgba(233, 229, 241, 1)] border-b-0 rounded-t-xl flex flex-auto  p-2  text-center justify-center'>
             {" "}
             <h1 className=' font-bold  text-3xl'> Samson</h1>
           </div>
           <div className='border-b-2 px-2  border-[rgb(65, 5, 177)] py-2'>
             {" "}
-            <button onClick={toggleNav}>
+            <button className='text-white' onClick={toggleNav}>
               {nav ? <FaBars size={30} /> : <FaBan size={30} />}
             </button>
           </div>
         </div>
-        <nav className='justify-end flex md:hidden z-100 fixed top-17  right-1'>
+        <nav className='justify-end  flex md:hidden z-100 fixed top-17  right-1'>
           <div
             className={
               nav

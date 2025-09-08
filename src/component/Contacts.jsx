@@ -54,7 +54,7 @@ const Contacts = () => {
             });
           }, []);
     return (
-        <div className='md:m-10  text-white md:flex    justify-around p-10 ' >
+        <div className='  text-white md:flex bot1   justify-around p-10 ' >
 
 <div className="cards" data-aos="flip-right" data-aos-offset="200"> 
   <div className="cards22 h-full">
