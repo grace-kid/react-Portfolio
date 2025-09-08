@@ -232,7 +232,9 @@ header {
     
   }
 }
-
+.bts {
+  background-color: rgba(0, 0, 0, 0.897);
+}
 .cvd {
   :last-child {
     display: none;
@@ -483,7 +485,7 @@ header {
 }
 
 .cards2:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 13, 0.3);
 }
 
 #heading {

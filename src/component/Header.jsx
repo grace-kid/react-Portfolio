@@ -96,9 +96,9 @@ const Header = () => {
           <div
             className='border-b-2 px-2    border-[rgb(65, 5, 177)] py-2'
             onClick={toggleContact}>
-                <button className='text-white' > 
-            {contact ? <FaLink size={30} /> : <FaBan size={30} />}
-                </button>
+            <button className='text-white'>
+              {contact ? <FaLink size={30} /> : <FaBan size={30} />}
+            </button>
           </div>
           <div className='link border-2 text-[rgba(233, 229, 241, 1)] border-b-0 rounded-t-xl flex flex-auto  p-2  text-center justify-center'>
             {" "}
@@ -111,60 +111,60 @@ const Header = () => {
             </button>
           </div>
         </div>
-        <nav className='justify-end  flex md:hidden z-100 fixed top-17  right-1'>
+        <nav className='justify-end   flex md:hidden z-100 fixed top-17  right-1'>
           <div
             className={
               nav
                 ? "hidden"
-                : "space-y-2 flex flex-col  end-0 bg-black border-l-2 text-2xl  "
+                : "space-y-2 flex flex-col rounded-bl-2xl font-bold end-0 bg-black border-l-2 text-2xl  "
             }>
             <a
-              className=' p-2 bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold '
+              className=' p-2 bg-white border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold '
               href='#about'>
-              about
+              <span className='text-black '>about</span>
             </a>
             <a
-              className=' p-2 bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold '
+              className=' p-2 bg-white border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold '
               href='#contact'>
-              contact
+              <span className='text-black'>contact</span>
             </a>
             <a
-              className=' p-2 bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold '
+              className=' p-2 bg-white border-b-2 rounded-bl-2xl border-[rgb(65, 5, 177)] hover:font-extrabold '
               href='#work'>
-              work
+              <span className='text-black'>work</span>
             </a>
           </div>
         </nav>
-        <nav className='justify-start flex md:hidden z-100  fixed  top-17 left-1'>
+        <nav className='justify-start flex  md:hidden z-100  fixed  top-17 left-1'>
           <div
             className={
               contact
                 ? "hidden"
-                : "space-y-2 flex flex-col  end-0 z-200  font-bold bg-black border-r-2  text-2xl "
+                : "space-y-2 flex flex-col rounded-br-2xl end-0 z-200  font-bold bg-black border-r-2  text-2xl "
             }>
             <a
-              className=' bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
+              className=' bg-white  border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
               target='_blank'
               href='http://github.com/grace-kid'>
-              github
+              <span className='text-black'>github</span>
             </a>
             <a
-              className=' bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
+              className=' bg-white  border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
               target='_blank'
               href='https://www.tiktok.com/@grace.kid59?_t=ZM-8uuGNR2eBN7&_r=1'>
-              tik tok
+              <span className='text-black'>tik tok</span>
             </a>
             <a
-              className=' bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
+              className=' bg-white  border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
               target='_blank'
               href=''>
-              facebook
+              <span className='text-black'>facebook</span>
             </a>
             <a
-              className=' bg-black border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
+              className=' bg-white border-b-2 rounded-br-2xl border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
               target='_blank'
               href='http://wa.me/2347082865002'>
-              whatsapp
+              <span className='text-black'>whatsapp</span>
             </a>
           </div>
         </nav>

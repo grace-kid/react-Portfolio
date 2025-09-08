@@ -9,59 +9,74 @@ import pic03 from '../assets/pic03.jpg';
 import pic04 from '../assets/pic04.jpg';
 import pic05 from '../assets/pic05.jpg';
 import pic06 from '../assets/pic06.jpg';
+import pic07 from '../assets/skillmach.jpg';
 import {  FaGithub,  FaLink } from 'react-icons/fa';
 
 const projects = [
-    {
-        title: 'Affiliate  program',
-        description: 'the project is a simple affiliate marketing program that allows users to earn money by referring people to the platform. ',
-        link: 'https://github.com/grace-kid/shiba-earn',
-        gitlink: 'https://github.com/grace-kid/shiba-earn',
-        image: pic05,
-        skills: '#css #node.js #postgreSql  ', 
-    },
-    {
-        title: 'E-commerce Computer Store',
-        description: 'this project is an e-commerce computer store that allows users to buy computer parts and accessories.',
-        link: 'https://grace-kid.github.io/D.W.T-computer-store/',
-        gitlink: 'https://github.com/grace-kid/D.W.T-computer-store',
-        image: pic01,
-        skills: '#javaScript #css  #html',
-    },
-    {
-        title: 'CGP Calculator',
-        description: 'this project is a CGP calculator that allows students to calculate their CGP. ',
-        link: 'https://grace-kid.github.io/ESUT-GP-Calculator/',
-        gitlink: 'https://github.com/grace-kid/ESUT-GP-Calculator',
-        image: pic02,
-        skills: '#html #css #angularJS ',
-    },
-    {
-        title: 'Nova Wave',
-        description: 'this investment website allows users to invest in the stock market.',
-        link: 'https://github.com/grace-kid/nova-wave',
-        gitlink: 'https://github.com/grace-kid/nova-wave',
-        image: pic04,
-        skills: '#css #node.js #postgreSql  ', 
-
-    },
-    {
-        title: 'Movie search ',
-        description: 'this project allows users to search for movies and get information about the movie.',
-        link: 'https://github.com/grace-kid/movie-search',
-        gitlink: 'https://github.com/grace-kid/movie-search',
-        image: pic06,
-        skills: '#ejs #node.js  #tailwindcss', 
-    },
-    {
-        title: 'cryptopluse ',
-        description: 'this investment website allows users to invest in the stock market.',
-        link:'https://grace-kid.github.io/investment-site/',
-        gitlink: 'https://github.com/grace-kid/investment-site-',
-        image: pic03,
-        skills: '#javaScript #css  #html',
-    },
-    // Add more projects as needed
+  {
+    title: "Skill Marchant",
+    description:
+      "Skill Merchants is a leading online platform that connects individuals with the skills they need to succeed in today's competitive job market. ",
+    link: "https://skillmerchants.com/pages/users/login",
+    gitlink: "https://github.com/skillmerchants/skill-merchants",
+    image: pic07,
+    skills: "#react #tailwind css  ",
+  },
+  {
+    title: "E-commerce Computer Store",
+    description:
+    "this project is an e-commerce computer store that allows users to buy computer parts and accessories.",
+    link: "https://grace-kid.github.io/D.W.T-computer-store/",
+    gitlink: "https://github.com/grace-kid/D.W.T-computer-store",
+    image: pic01,
+    skills: "#javaScript #css  #html",
+  },
+  {
+    title: "CGP Calculator",
+    description:
+    "this project is a CGP calculator that allows students to calculate their CGP. ",
+    link: "https://grace-kid.github.io/ESUT-GP-Calculator/",
+    gitlink: "https://github.com/grace-kid/ESUT-GP-Calculator",
+    image: pic02,
+    skills: "#html #css #angularJS ",
+  },
+  {
+    title: "Affiliate  program",
+    description:
+      "the project is a simple affiliate marketing program that allows users to earn money by referring people to the platform. ",
+    link: "https://github.com/grace-kid/shiba-earn",
+    gitlink: "https://github.com/grace-kid/shiba-earn",
+    image: pic05,
+    skills: "#css #node.js #postgreSql  ",
+  },
+  {
+    title: "Nova Wave",
+    description:
+      "this investment website allows users to invest in the stock market.",
+    link: "https://github.com/grace-kid/nova-wave",
+    gitlink: "https://github.com/grace-kid/nova-wave",
+    image: pic04,
+    skills: "#css #node.js #postgreSql  ",
+  },
+  {
+    title: "Movie search ",
+    description:
+      "this project allows users to search for movies and get information about the movie.",
+    link: "https://github.com/grace-kid/movie-search",
+    gitlink: "https://github.com/grace-kid/movie-search",
+    image: pic06,
+    skills: "#ejs #node.js  #tailwindcss",
+  },
+  {
+    title: "cryptopluse ",
+    description:
+      "this investment website allows users to invest in the stock market.",
+    link: "https://grace-kid.github.io/investment-site/",
+    gitlink: "https://github.com/grace-kid/investment-site-",
+    image: pic03,
+    skills: "#javaScript #css  #html",
+  },
+  // Add more projects as needed
 ];
 
 const Projects = () => {
