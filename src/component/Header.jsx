@@ -157,7 +157,7 @@ const Header = () => {
             <a
               className=' bg-white  border-b-2 border-[rgb(65, 5, 177)] hover:font-extrabold  p-2'
               target='_blank'
-              href=''>
+              href='https://www.facebook.com/profile.php?id=100089490734680'>
               <span className='text-black'>facebook</span>
             </a>
             <a
