@@ -22,6 +22,7 @@ const Intro = () => {
       className='intro flex flex-col items-start justify-start min-h-screen bg-black text-[#4105b1]'>
       <div className='intro-box w-full m-0 md:text-center text-left'>
         {/* Title */}
+        <div  className='w-full flex justify-start md:justify-center px-10'>
         <h1
           className='md:text-8xl text-left font-bold flex md:my-8 underline text-white'
           data-aos='fade-up'
@@ -38,6 +39,7 @@ const Intro = () => {
           </span>
           ut Me
         </h1>
+        </div>
 
         {/* Description */}
         <p
