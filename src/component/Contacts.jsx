@@ -146,7 +146,7 @@ const Contacts = () => {
                     </div>
                   </div>
                   <div>
-                    <h2 className='font-bold text-xl my-5'>Quick as</h2>
+                    <h2 className='font-bold text-xl my-5'>Quick Links</h2>
                     <p>
                       <button className='hover:underline'>
                         <a href='#about'>About us</a>
