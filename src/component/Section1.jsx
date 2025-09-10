@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import CV from '../assets/CV.docx';
+import CV from '../assets/CV.pdf';
 import {  FaEye, FaDownload } from 'react-icons/fa';
 
 const Section1 = () => {

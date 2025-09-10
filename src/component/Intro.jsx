@@ -1,6 +1,6 @@
 import { FaWhatsapp, FaGithub, FaTiktok, FaFacebook, FaEye, FaDownload } from 'react-icons/fa';
 import pic11 from '../assets/pic11.jpg'; // Import image
-import CV from '../assets/CV.docx'; // Import .docx file
+import CV from '../assets/CV.pdf'; // Import .docx file
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
