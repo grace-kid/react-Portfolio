@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaWhatsapp, FaGithub, FaTiktok, FaFacebook ,  FaBars,  FaBan, FaLink } from 'react-icons/fa';
+import logo from '../assets/3.png'; // Import .docx file
 
 import '../App.css'
 import AOS from 'aos';
@@ -28,7 +29,8 @@ const Header = () => {
         data-aos='fade-down'>
         <nav className=' justify-between md:flex hidden  '>
           <div className='border-b-2  border-[rgb(65, 5, 177)] py-3'>
-            <h1 className='border-[rgb(65, 5, 177)] border-2  h1 px-3 rounded-sm -skew-x-16 rounded-tl-xl rounded-bl-xl font-extrabold hover:bg-purple-800  hover:text-white '>
+              <img src={logo} className='inline h-7 w-7 border mr-2  rounded-full' alt="logo" />
+            <h1 className='border-[rgb(65, 5, 177)] border-2 inline-block h1 px-3 rounded-sm -skew-x-16   font-extrabold hover:bg-purple-800  hover:text-white '>
               {" "}
               Samson
             </h1>
