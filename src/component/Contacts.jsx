@@ -70,8 +70,8 @@ const Contacts = () => {
             className=' max-w-screen   '
             data-aos='zoom-in'
             data-aos-offset='200'>                              
-            <footer className=' min-w-screen text-white pb-10 font-inter'>
-              <div>
+            <footer className=' max-w-screen text-white pb-10 font-inter'>
+              <div className='w-full'>
                 <div className='flex justify-center items-center md:gap-24 gap-10 m-10 flex-wrap'>
                   <div
                     className='cards w-70'
